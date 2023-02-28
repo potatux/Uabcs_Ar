@@ -8,10 +8,22 @@
     <script src="https://raw.githack.com/AR-js-org/AR.js/master/three.js/build/ar.js"></script>
     <body style="margin: 0px; overflow: hidden;">
         <a-scene embedded arjs>
-            <a-marker preset="hiro">
+            <a-marker presset="hiro">
+
+                <!--
+                    prueba con cubo
                 <a-box position="0 0.5 0" material="color: red">
                     <a-animation attribute="rotation" dur="3000" to="360 360 0" repeat="indefinite" easing="linear"></a-animation>
                 </a-box>
+                -->
+
+                <!--prueba con modelo 3d -->
+
+                <a-entity gltf-model="scene.gltf"
+                position="0 0.5 0"
+                ></a-entity>
+
+
             </a-marker>
             <a-entity camera></a-entity>
         </a-scene>
